@@ -30,6 +30,7 @@
     <ClInclude Include="Rook.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="King.cpp" />
     <ClCompile Include="Piece.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
