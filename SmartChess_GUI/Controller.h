@@ -21,6 +21,20 @@ public:
 
 	bool IsGameOver();
 
+	void Initialize();
+
+	void Draw();
+
+	void Run();
+
+	void MouseClicked(const sf::Vector2i& position);
+
+	void EmptyCellClicked(int row, int column);
+
+	void PutPiecesInCell(int row, int column);
+
+	void UpdateStatusText();
+
 private:
 	Board xGameBoard;
 	char Turn;
