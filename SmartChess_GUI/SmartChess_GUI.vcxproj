@@ -41,6 +41,18 @@
     <ClCompile Include="Queen.cpp" />
     <ClCompile Include="Rook.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Resources\images\chessBoard_1280.png" />
+    <Image Include="..\Resources\images\icons8-bishop-200.png" />
+    <Image Include="..\Resources\images\icons8-king-200.png" />
+    <Image Include="..\Resources\images\icons8-knight-200.png" />
+    <Image Include="..\Resources\images\icons8-pawn-200.png" />
+    <Image Include="..\Resources\images\icons8-queen-200.png" />
+    <Image Include="..\Resources\images\icons8-rook-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="..\Resources\font\CascadiaCode.ttf" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>

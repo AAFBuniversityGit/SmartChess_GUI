@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Resource Files\images">
+      <UniqueIdentifier>{5866cfd5-bf67-40e5-9551-6b1b419f29da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\font">
+      <UniqueIdentifier>{9a6c5e54-7739-4db6-9f65-59cd80c943a1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Piece.h">
@@ -74,5 +80,33 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Resources\images\chessBoard_1280.png">
+      <Filter>Resource Files\images</Filter>
+    </Image>
+    <Image Include="..\Resources\images\icons8-bishop-200.png">
+      <Filter>Resource Files\images</Filter>
+    </Image>
+    <Image Include="..\Resources\images\icons8-king-200.png">
+      <Filter>Resource Files\images</Filter>
+    </Image>
+    <Image Include="..\Resources\images\icons8-knight-200.png">
+      <Filter>Resource Files\images</Filter>
+    </Image>
+    <Image Include="..\Resources\images\icons8-pawn-200.png">
+      <Filter>Resource Files\images</Filter>
+    </Image>
+    <Image Include="..\Resources\images\icons8-queen-200.png">
+      <Filter>Resource Files\images</Filter>
+    </Image>
+    <Image Include="..\Resources\images\icons8-rook-200.png">
+      <Filter>Resource Files\images</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="..\Resources\font\CascadiaCode.ttf">
+      <Filter>Resource Files\font</Filter>
+    </Font>
   </ItemGroup>
 </Project>
