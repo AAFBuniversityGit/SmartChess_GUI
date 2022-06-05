@@ -32,6 +32,7 @@
   <ItemGroup>
     <ClCompile Include="King.cpp" />
     <ClCompile Include="Piece.cpp" />
+    <ClCompile Include="Queen.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
