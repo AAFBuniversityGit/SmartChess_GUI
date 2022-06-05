@@ -29,6 +29,9 @@
     <ClInclude Include="Queen.h" />
     <ClInclude Include="Rook.h" />
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Piece.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
