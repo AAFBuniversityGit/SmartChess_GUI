@@ -5,7 +5,11 @@
 class Controller
 {
 public:
-	Controller();
+	Controller(RenderWindow* _window);
+
+	sf::RenderWindow* window;
+	Font font;
+	Text statusText;
 
 	~Controller();
 

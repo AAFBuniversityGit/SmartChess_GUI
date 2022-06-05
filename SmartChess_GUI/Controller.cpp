@@ -4,8 +4,9 @@
 
 using namespace std;
 
-Controller::Controller() :Turn('W')
+Controller::Controller(RenderWindow* _window) :Turn('W'), window(_window)
 {
+    window->setFramerateLimit(60);
 }
 
 Controller::~Controller()
