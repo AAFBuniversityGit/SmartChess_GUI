@@ -1,5 +1,7 @@
 #include "Helper.h"
 
+#include "Controller.h"
+
 sf::Vector2f GetCellPosition(int row, int column)
 {
     return sf::Vector2f(
@@ -10,7 +12,32 @@ sf::Vector2f GetCellPosition(int row, int column)
 string GetPiecePath(Id id)
 {
     string path = "resources/images/";
-    path += (id == X ? "X" : "O");
+    string imageName;
+    if (id == 'K')
+    {
+        imageName == "k";
+    }
+    else if (id == 'Q')
+    {
+        imageName == "Q";
+    }
+    else if (id == 'B')
+    {
+        imageName == "B";
+    }
+    else if (id == 'N')
+    {
+        imageName == "N";
+    }
+    else if (id == 'R')
+    {
+        imageName == "R";
+    }
+    else if (id == 'P')
+    {
+        imageName == "P";
+    }
+    path = imageName + GetNameofId(Controller::curr_user->id);
     return path + ".png";
 }
 
@@ -26,7 +53,7 @@ int GetCellIndex(int x)
     return index;
 }
 
-string get_naGetNameofIdme_of_id(Id id)
+string GetNameofId(Id id)
 {
     return id == X ? "X" : "O";
 }

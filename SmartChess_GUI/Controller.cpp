@@ -4,9 +4,9 @@
 
 using namespace std;
 
-Controller::Controller(RenderWindow* _window) :Turn('W'), window(_window)
+Controller::Controller(RenderWindow* _window) : Turn('W'), window(_window), xGameBoard(B)
 {
-    window->setFramerateLimit(60);
+	window->setFramerateLimit(60);
 }
 
 Controller::~Controller()
@@ -186,7 +186,7 @@ void Controller::Initialize()
         }
     }
     this->curr_user = this->user_x;
-    font.loadFromFile("resources/fonts/roboto.ttf");
+    font.loadFromFile("/Resources/font/CascadiaCode.ttf");
     statusText.setFont(font);
     statusText.setCharacterSize(30);
     statusText.setStyle(sf::Text::Regular);

@@ -2,8 +2,8 @@
 
 enum Id
 {
-    O,
-    X
+    B,
+    W
 };
 
 enum CellStatus
