@@ -170,3 +170,27 @@ bool Controller::IsGameOver()
     }
     return !CanMove;
 }
+
+void Controller::Initialize()
+{
+    end = false;
+    this->cells.resize(3);
+    for (int row = 0; row < 3; row++)
+    {
+        this->cells[row].resize(3);
+        for (int column = 0; column < 3; column++)
+        {
+            this->cells[row][column].rect.setSize(sf::Vector2f(setting::CellSize, setting::CellSize));
+            this->cells[row][column].rect.setFillColor(setting::CellColor);
+            this->cells[row][column].rect.setPosition(GetCellPosition(row, column));
+        }
+    }
+    this->curr_user = this->user_x;
+    font.loadFromFile("resources/fonts/roboto.ttf");
+    statusText.setFont(font);
+    statusText.setCharacterSize(30);
+    statusText.setStyle(sf::Text::Regular);
+    statusText.setFillColor(sf::Color::Black);
+    statusText.setPosition(400.f, 80.f);
+    this->UpdateStatusText();
+}

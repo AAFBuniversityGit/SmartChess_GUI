@@ -8,6 +8,10 @@ public:
 	Controller(RenderWindow* _window);
 
 	sf::RenderWindow* window;
+	Cells cells;
+	Board* user_x;
+	Board* user_o;
+	Board* curr_user;
 	Font font;
 	Text statusText;
 
