@@ -202,7 +202,7 @@ void Controller::Draw()
         {
             this->window->draw(this->cells[row][column].rect);
             if (this->cells[row][column].CellStatus == OCCUPIED)
-                this->window->draw(this->cells[row][column].piece->sprite);
+                this->window->draw(this->cells[row][column].PutPieces->sprite);
         }
     this->window->draw(this->statusText);
 }
@@ -249,9 +249,9 @@ void Controller::EmptyCellClicked(int row, int column)
 
 void Controller::PutPiecesInCell(int row, int column)
 {
-    PutPieces* xo = new PutPieces(this->curr_user->id);
-    xo->sprite.setPosition(this->cells[row][column].rect.getPosition());
-    this->cells[row][column].piece = xo;
+    PutPieces* put_pieces = new PutPieces(this->curr_user->id);
+    put_pieces->sprite.setPosition(this->cells[row][column].rect.getPosition());
+    this->cells[row][column].PutPieces = put_pieces;
     this->cells[row][column].CellStatus = OCCUPIED;
 }
 
