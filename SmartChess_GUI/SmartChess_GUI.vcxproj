@@ -24,6 +24,7 @@
     <ClInclude Include="Cell.h" />
     <ClInclude Include="Controller.h" />
     <ClInclude Include="Data.h" />
+    <ClInclude Include="Helper.h" />
     <ClInclude Include="King.h" />
     <ClInclude Include="Knight.h" />
     <ClInclude Include="Pawn.h" />
@@ -35,6 +36,7 @@
     <ClCompile Include="Bishop.cpp" />
     <ClCompile Include="Board.cpp" />
     <ClCompile Include="Controller.cpp" />
+    <ClCompile Include="Helper.cpp" />
     <ClCompile Include="King.cpp" />
     <ClCompile Include="Knight.cpp" />
     <ClCompile Include="main.cpp" />
