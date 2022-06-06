@@ -228,3 +228,12 @@ void Controller::Run()
         this->window->display();
     }
 }
+
+void Controller::MouseClicked(const sf::Vector2i& position)
+{
+    int row = GetCellIndex(position.y), column = GetCellIndex(position.x);
+    if (row == -1 || column == -1)
+        return;
+    if (this->cells[row][column].CellStatus == EMPTY)
+        this->EmptyCellClicked(row, column);
+}
