@@ -206,3 +206,25 @@ void Controller::Draw()
         }
     this->window->draw(this->statusText);
 }
+
+void Controller::Run()
+{
+    this->Initialize();
+    this->window->display();
+    while (this->window->isOpen()) {
+        sf::Event event;
+
+        while (this->window->pollEvent(event)) {
+            if (event.type == sf::Event::Closed) {
+                this->window->close();
+            }
+            if (!this->end && sf::Mouse::isButtonPressed(sf::Mouse::Left)) {
+                this->MouseClicked(sf::Mouse::getPosition(*(this->window)));
+            }
+        }
+        this->window->clear(sf::Color(150, 150, 150));
+        this->UpdateStatusText();
+        this->Draw();
+        this->window->display();
+    }
+}
