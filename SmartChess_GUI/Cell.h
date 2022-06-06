@@ -10,7 +10,7 @@ class Cell
 {
 public:
     RectangleShape rect;
-    CellStatus cell_status = EMPTY;
+    CellStatus CellStatus = EMPTY;
     Piece* piece;
 };
 
