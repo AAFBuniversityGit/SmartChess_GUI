@@ -254,3 +254,11 @@ void Controller::PutPiecesInCell(int row, int column)
     this->cells[row][column].piece = xo;
     this->cells[row][column].CellStatus = OCCUPIED;
 }
+
+void Controller::UpdateStatusText()
+{
+    if (this->end)
+        statusText.setString(GetNameofId(this->curr_user->id) + " Wins!");
+    else
+        statusText.setString(GetNameofId(this->curr_user->id) + " Turn");
+}
