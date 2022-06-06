@@ -22,5 +22,7 @@ public:
 
 	bool CheckWin(Cells& cells);
 
+	bool IsCellForYou(Cells& cell);
+
 	bool IsCellForYou(vector<Cell>::const_reference cell);
 };

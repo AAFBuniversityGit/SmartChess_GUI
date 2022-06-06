@@ -37,7 +37,7 @@ string GetPiecePath(Id id)
     {
         imageName == "P";
     }
-    path = imageName + GetNameofId(Controller::curr_user->id);
+    path = imageName + GetNameofId(id == B ? B : W);
     return path + ".png";
 }
 
@@ -55,5 +55,5 @@ int GetCellIndex(int x)
 
 string GetNameofId(Id id)
 {
-    return id == X ? "X" : "O";
+    return id == B ? "B" : "W";
 }
