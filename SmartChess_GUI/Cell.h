@@ -1,17 +1,15 @@
 #pragma once
 
-#include <vector>
+#include "vector"
 #include "Data.h"
 #include "Piece.h"
-
-using namespace std;
 
 class Cell
 {
 public:
-    RectangleShape rect;
+    sf::RectangleShape rect;
     CellStatus CellStatus = EMPTY;
     Piece* piece;
 };
 
-typedef typename vector<vector<Cell>> Cells;
+typedef typename std::vector<std::vector<Cell>> Cells;
