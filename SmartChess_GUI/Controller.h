@@ -13,6 +13,7 @@ public:
 	Board* user_o;
 	Board* curr_user;
 	Font font;
+	bool end;
 	Text statusText;
 
 	~Controller();

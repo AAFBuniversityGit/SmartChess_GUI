@@ -194,3 +194,15 @@ void Controller::Initialize()
     statusText.setPosition(400.f, 80.f);
     this->UpdateStatusText();
 }
+
+void Controller::Draw()
+{
+    for (int row = 0; row < 3; row++)
+        for (int column = 0; column < 3; column++)
+        {
+            this->window->draw(this->cells[row][column].rect);
+            if (this->cells[row][column].CellStatus == OCCUPIED)
+                this->window->draw(this->cells[row][column].piece->sprite);
+        }
+    this->window->draw(this->statusText);
+}
