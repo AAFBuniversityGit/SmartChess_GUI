@@ -237,3 +237,12 @@ void Controller::MouseClicked(const sf::Vector2i& position)
     if (this->cells[row][column].CellStatus == EMPTY)
         this->EmptyCellClicked(row, column);
 }
+
+void Controller::EmptyCellClicked(int row, int column)
+{
+    PutPiecesInCell(row, column);
+    this->end = this->curr_user->CheckWin(this->cells);
+    if (this->end)
+        return;
+    this->curr_user = this->curr_user->id == X ? this->user_o : this->user_x;
+}
