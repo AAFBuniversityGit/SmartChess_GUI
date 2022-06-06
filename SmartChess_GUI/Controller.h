@@ -1,6 +1,9 @@
 #pragma once
-#include "Piece.h"
+#include "PutPieces.h"
 #include "Board.h"
+#include "SFML/Graphics.hpp"
+
+using namespace sf;
 
 class Controller
 {

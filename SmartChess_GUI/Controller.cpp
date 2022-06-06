@@ -246,3 +246,11 @@ void Controller::EmptyCellClicked(int row, int column)
         return;
     this->curr_user = this->curr_user->id == X ? this->user_o : this->user_x;
 }
+
+void Controller::PutPiecesInCell(int row, int column)
+{
+    PutPieces* xo = new PutPieces(this->curr_user->id);
+    xo->sprite.setPosition(this->cells[row][column].rect.getPosition());
+    this->cells[row][column].piece = xo;
+    this->cells[row][column].CellStatus = OCCUPIED;
+}
