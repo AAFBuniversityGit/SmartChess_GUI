@@ -244,7 +244,7 @@ void Controller::EmptyCellClicked(int row, int column)
     this->end = this->curr_user->CheckWin(this->cells);
     if (this->end)
         return;
-    this->curr_user = this->curr_user->id == W ? this->user_o : this->user_x;
+    this->curr_user = this->curr_user->id == X ? this->user_o : this->user_x;
 }
 
 void Controller::PutPiecesInCell(int row, int column)
