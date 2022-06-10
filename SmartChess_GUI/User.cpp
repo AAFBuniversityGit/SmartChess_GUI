@@ -22,7 +22,7 @@ bool User::CheckWin(Cells& cells)
     return false;
 }
 
-bool User::IsCellForYou(Cells& cell)
+bool User::IsCellForYou(Cell& cell)
 {
     return cell.PutPieces && cell.PutPieces->id == this->id;
 }
