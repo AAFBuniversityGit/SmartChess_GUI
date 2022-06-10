@@ -5,9 +5,11 @@
 class User
 {
 public:
+	User(Id id);
+
 	Id id;
 
 	bool CheckWin(Cells& cells);
 
-	bool IsCellForYou(vector<Cell>::const_reference cell);
-}
+	bool IsCellForYou(Cell& cell);
+};

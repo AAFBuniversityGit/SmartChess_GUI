@@ -107,6 +107,9 @@
     <ClCompile Include="PutPieces.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="User.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="..\Resources\images\chessBoard_1280.png">

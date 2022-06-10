@@ -10,7 +10,7 @@
 
 using namespace std;
 
-Board::Board(Id _id) : id(_id)
+Board::Board()
 {
     for (int Row = 0; Row < 8; ++Row)
     {
@@ -179,29 +179,5 @@ bool Board::AllowedToMove(char PieceColor)
         }
     }
     return false;
-}
-
-bool Board::CheckWin(Cells &cells)
-{
-    if ((IsCellForYou(cells[0][0])) &&
-        ((IsCellForYou(cells[0][1]) && IsCellForYou(cells[0][2])) ||
-            (IsCellForYou(cells[1][0]) && IsCellForYou(cells[2][0])) ||
-            (IsCellForYou(cells[1][1]) && IsCellForYou(cells[2][2]))))
-        return true;
-    if ((IsCellForYou(cells[1][1])) &&
-        ((IsCellForYou(cells[1][0]) && IsCellForYou(cells[1][2])) ||
-            (IsCellForYou(cells[0][1]) && IsCellForYou(cells[2][1])) ||
-            (IsCellForYou(cells[0][2]) && IsCellForYou(cells[2][0]))))
-        return true;
-    if ((IsCellForYou(cells[2][2])) &&
-        ((IsCellForYou(cells[2][1]) && IsCellForYou(cells[2][0])) ||
-            (IsCellForYou(cells[1][2]) && IsCellForYou(cells[0][2]))))
-        return true;
-    return false;
-}
-
-bool Board::IsCellForYou(Cells& cell)
-{
-    return cell.PutPieces && cell.PutPieces->id == this->id;
 }
 
