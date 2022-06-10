@@ -1,6 +1,7 @@
 #pragma once
 #include "PutPieces.h"
 #include "Board.h"
+#include "User.h"
 #include "SFML/Graphics.hpp"
 
 using namespace sf;
@@ -12,9 +13,9 @@ public:
 
 	sf::RenderWindow* window;
 	Cells cells;
-	Board* user_x;
-	Board* user_o;
-	Board* curr_user;
+	User* user_x;
+	User* user_o;
+	User* curr_user;
 	Font font;
 	bool end;
 	Text statusText;

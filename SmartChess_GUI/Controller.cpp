@@ -1,10 +1,11 @@
 #include "Controller.h"
+#include "User.h"
 #include <string>
 #include <iostream>
 
 using namespace std;
 
-Controller::Controller(RenderWindow* _window) : Turn('W'), window(_window), xGameBoard(B)
+Controller::Controller(RenderWindow* _window) : Turn('W'), window(_window)
 {
 	window->setFramerateLimit(60);
 }
