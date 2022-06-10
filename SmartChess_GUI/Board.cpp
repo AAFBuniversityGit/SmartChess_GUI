@@ -202,6 +202,6 @@ bool Board::CheckWin(Cells &cells)
 
 bool Board::IsCellForYou(Cells& cell)
 {
-    return cell.piece && cell.piece->id == this->id;
+    return cell.PutPieces && cell.PutPieces->id == this->id;
 }
 
